@@ -6,6 +6,22 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
     <body>
+     <script>
+            //Array of fun facts
+            var funFacts = [
+                "I can solve a Rubik's cube in under a minute!",
+                "I have visited 10 different countries!",
+                "I am a certified scuba diver!",
+                "I am fluent in 3 languages!",
+                "I have won a national cooking competition!"
+            ];
+            function displayFunFact() {
+                //Generate a random number between 0 and the number of fun facts
+                var randomNumber = Math.floor(Math.random() * funFacts.length);
+                //Select the fun-fact element and set its text to the selected fun fact
+                document.getElementById("fun-fact").innerHTML = funFacts[randomNumber];
+            }
+        </script>
     <table cellspacing="20">
       <tr>
         <td>
@@ -14,7 +30,9 @@
           <td>  <h2 style="background-color:LightBlue">Mr.Sushil Balasaheb Pokharkar</h2>
             <p>I am an Software And web devloper. I love information gathering and i also love bike riding.</p>
             <a href=https://www.linkedin.com/in/sushil-pokharkar?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BLeLcvXVzR8CUwDWhArXACA%3D%3D>linkedin</a>
-            </td>
+            <button style="background-color: gold" onclick="displayFunFact()">Fun Fact</button>
+<p id="fun-fact"></p>
+     </td>
 
 
         </tr>
