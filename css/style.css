@@ -17,7 +17,7 @@ img
 {
   border-radius:10%;
 }
-     #game-section {
+#game-section {
                 background-color: skyblue;
                 padding: 20px;
                 margin: 20px;
@@ -41,7 +41,7 @@ img
                 margin: 5px;
                 font-size: 18px;
                 background-color: #0077c9;
-                color: #ffffff;
+                color: blue;
                 border: none;
                 cursor: pointer;
 </style>
