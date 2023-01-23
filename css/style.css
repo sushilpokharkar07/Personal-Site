@@ -17,4 +17,31 @@ img
 {
   border-radius:10%;
 }
+     #game-section {
+                background-color: skyblue;
+                padding: 20px;
+                margin: 20px;
+                box-shadow: 2px 2px 2px #cccccc;
+                text-align: center;
+            }
+            /* Style the game section headings */
+            #game-section h2 {
+                color: #0077c9;
+                text-align: center;
+            }
+            /* Style the game section text */
+            #game-section p {
+                color: #4d4d4d;
+                line-height: 1.5;
+                text-align: center;
+            }
+            /* Style the game buttons */
+            #game-section button {
+                padding: 10px 20px;
+                margin: 5px;
+                font-size: 18px;
+                background-color: #0077c9;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
 </style>
