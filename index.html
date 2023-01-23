@@ -68,6 +68,29 @@
     </table>
   </ul>
   </div>
+<div id="game-section">
+    <h2>Guess the Number Game</h2>
+    <p>I'm thinking of a number between 1 and 10. Can you guess it?</p>
+    <input type="text" id="guess-input" placeholder="Enter your guess here"></input>
+    <button onclick="checkGuess()">Guess</button>
+    <p id="result"></p>
+    <script>
+                var correctNumber = Math.floor(Math.random() * 10) + 1; //generate a random number between 1 and 10
+                var guessCount = 0; //initialize the guess count
+                function checkGuess() {
+                    var guess = document.getElementById("guess-input").value; //get the user's guess from the input
+                    if (guess == correctNumber) {
+                        document.getElementById("result").innerHTML = "Congratulations! You guessed the number in " + guessCount + " tries.";
+                    } else if (guess > correctNumber) {
+                        document.getElementById("result").innerHTML = "Sorry, your guess is too high. Try again.";
+                        guessCount++;
+                    } else {
+                        document.getElementById("result").innerHTML = "Sorry, your guess is too low. Try again.";
+                        guessCount++;
+                    }
+                }
+            </script>
+</div>
     </tr>
   </table>
   <hr>
